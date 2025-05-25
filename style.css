@@ -1,0 +1,110 @@
+/* Base Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Body Styling */
+  body {
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(to top right, #1f1c2c, #928dab);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    animation: fadeIn 1s ease-in;
+  }
+  
+  /* Fade In Animation */
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  
+  /* Container */
+  .quiz-container {
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 15px;
+    padding: 30px 25px;
+    width: 90%;
+    max-width: 550px;
+    text-align: center;
+    backdrop-filter: blur(12px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.25);
+    color: #ffffff;
+    animation: fadeIn 0.8s ease-in;
+  }
+  
+  /* Headings */
+  .quiz-container h1,
+  .quiz-container h2 {
+    margin-bottom: 15px;
+    font-weight: 600;
+  }
+  
+  .quiz-container h3 {
+    margin-bottom: 25px;
+    font-weight: normal;
+    color: #e0e0e0;
+  }
+  
+  /* Options */
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .option {
+    display: block;
+    width: 100%;
+    margin: 10px 0;
+    padding: 12px;
+    background-color: #282c34;
+    color: #f8f8f2;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  }
+  
+  .option:hover {
+    background-color: #44475a;
+    transform: scale(1.02);
+  }
+  
+  .option:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+  }
+  
+  /* Action Buttons */
+  button {
+    background-color: #ff79c6;
+    color: #1e1e2f;
+    border: none;
+    padding: 12px 22px;
+    margin-top: 20px;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-weight: bold;
+  }
+  
+  button:hover {
+    background-color: #ff92d0;
+    transform: scale(1.05);
+  }
+  
+  /* Score Text */
+  #score,
+  #final-score {
+    font-size: 18px;
+    margin-top: 20px;
+    color: #f1f1f1;
+  }
+  
