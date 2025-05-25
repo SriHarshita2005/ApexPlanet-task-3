@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Quiz App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Start Screen -->
+  <div id="start-screen" class="quiz-container">
+    <h1>Welcome to the Quiz!</h1>
+    <h3>All The Best</h3>
+    <button onclick="startQuiz()">Start Quiz</button>
+  </div>
+
+  <!-- Quiz Screen -->
+  <div id="quiz-screen" class="quiz-container" style="display: none;">
+    <h2 id="question">Question text</h2>
+    <ul>
+      <li><button class="option" onclick="checkAnswer(this)">Option 1</button></li>
+      <li><button class="option" onclick="checkAnswer(this)">Option 2</button></li>
+      <li><button class="option" onclick="checkAnswer(this)">Option 3</button></li>
+      <li><button class="option" onclick="checkAnswer(this)">Option 4</button></li>
+    </ul>
+    <p id="score"></p>
+    <button onclick="nextQuestion()">Next</button>
+  </div>
+
+  <!-- Final Score Screen -->
+  <div id="final-screen" class="quiz-container" style="display: none;">
+    <h2>Quiz Completed!</h2>
+    <p id="final-score">Your final score: </p>
+    <button onclick="restartQuiz()">Restart Quiz</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
